@@ -1,0 +1,186 @@
+
+@font-face {
+    font-family: 'Karla';
+    src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    
+}
+p,h1,h4,h2,a {
+    font-family: 'Karla';
+}
+/* ============================================
+    Header
+============================================*/
+header {
+    padding: 5vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #323A45;
+
+}
+header nav a:hover {
+    color: #848484;
+}
+/* ============================================
+    Main
+============================================*/
+main {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 25px;
+
+}
+section {
+    margin: 5vh 0;
+    grid-column: auto;
+}
+section div {
+    width: 100%;
+}
+section div img {
+    width: 100%;
+}
+section div img:hover {
+    filter:opacity(30%);
+    transition: filter 2s;
+}
+section.preview {
+    grid-column: 1/4;
+}
+
+main section article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+main section article div h4 {
+    margin-bottom: 5px;
+}
+main section article div p {
+    color: #848484;
+}
+/* ============================================
+    FOOTER
+============================================*/
+footer {
+    width: 90%;
+    margin: 10vh auto 1vh;
+}
+footer section {
+    display: flex;
+    margin-bottom: 100px;
+}
+footer section article {
+    margin-right: 5vw;
+
+}
+footer section article h2 {
+    margin-bottom: 50px;
+}
+footer section article p {
+    margin-bottom: 50px;
+    line-height: 2rem;
+}
+footer section article a {
+    color: #323A45;
+    text-decoration: none;
+    font-variation-settings: "wght" 700;
+}
+footer section article a:hover {
+    color: #848484;
+}
+
+
+footer section article.socialMedia a {
+    display: block;
+    margin-bottom: 10px;
+}
+span.dot {
+    height: 5px;
+    width: 5px;
+    margin: 2px 5px;
+    background-color: #848484;
+    border-radius: 50%;
+    display: inline-block;
+}
+footer p.outro {
+    font-size: 0.8rem;
+    color: #848484;
+}
+
+@media screen and (max-width: 768px) {
+    main section {
+        grid-column: 1/4;
+    }
+    footer section {
+        flex-wrap: wrap;
+    }
+    footer section article {
+        width: 100%;
+    }
+
+
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a.icon {
+        color: #848484;
+        display: block;
+        padding: 2px;
+      }
+    .topnav a {
+        color:  #848484;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    
+      }
+      .active {
+        background-color: #04AA6D;
+        color: #848484;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.icon:hover {
+        color: black;
+        background-color: white;
+
+      }
+}
+@media screen and (min-width: 768px) {
+
+    .topnav #myLinks {
+        display: inline !important;
+    }
+    a.icon {
+        display: none;
+    }
+}
+
